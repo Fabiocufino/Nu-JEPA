@@ -17,7 +17,7 @@ venv/
 .DS_Store
 
 # Training data and generated outputs stay off GitHub.
-data/
+# data/
 scratch/
 plots/
 logs/

@@ -1,0 +1,48 @@
+data:
+  dataset_path: /scratch/fcufino/events_v8.0_1000
+  reco_hits_key: reco_hits
+  recursive: false
+  max_events: null
+  detector_size: [48, 48, 200]
+  patch_size: [12, 12, 10]
+  coord_mode: discrete
+  energy_scale: 10.0
+  energy_transform: log1p
+  min_voxels_per_patch: 1
+
+masking:
+  num_target_blocks: 4
+  target_block_shape: [1, 1, 2]
+  min_target_patches: 1
+  max_target_fraction: 0.45
+  min_context_patches: 2
+  seed: 17
+
+model:
+  detector_size: [48, 48, 200]
+  patch_size: [12, 12, 10]
+  in_channels: 1
+  embed_dim: 128
+  depth: 4
+  num_heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.0
+  use_spconv: true
+  ema_decay: 0.999
+
+training:
+  output_dir: /scratch/fcufino/nu_jepa
+  checkpoint_dir: /scratch/fcufino/nu_jepa/checkpoints
+  log_dir: /scratch/fcufino/nu_jepa/logs
+  tensorboard: true
+  tensorboard_dir: /scratch/fcufino/nu_jepa/logs/tensorboard
+  batch_size: 8
+  num_workers: 2
+  epochs: 10
+  lr: 0.0001
+  weight_decay: 0.05
+  grad_clip_norm: 1.0
+  log_every: 10
+  checkpoint_every: 500
+  device: auto
+  seed: 17

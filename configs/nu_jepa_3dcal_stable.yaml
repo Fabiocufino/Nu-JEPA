@@ -1,0 +1,7 @@
+base: base_3dcal.yaml
+
+training:
+  output_dir: /scratch/fcufino/nu_jepa/stable
+  checkpoint_dir: /scratch/fcufino/nu_jepa/checkpoints_stable
+  log_dir: /scratch/fcufino/nu_jepa/logs_stable
+  tensorboard_dir: /scratch/fcufino/nu_jepa/logs_stable/tensorboard

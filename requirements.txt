@@ -1,0 +1,11 @@
+numpy
+pandas
+plotly
+pyyaml
+scikit-learn
+tensorboard
+torch
+umap-learn
+
+# Optional sparse convolution acceleration:
+# spconv-cu120

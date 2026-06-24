@@ -1,0 +1,7 @@
+base: base_3dcal.yaml
+
+model:
+  ema_decay: 0.996
+
+training:
+  lr: 0.0003

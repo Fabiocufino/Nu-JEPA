@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Python/build/editor state
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Training data and generated outputs stay off GitHub.
+data/
+scratch/
+plots/
+logs/
+checkpoints/
+tensorboard/
+wandb/
+runs/
+
+# Large ML artifacts.
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+events.out.tfevents*
